@@ -1,0 +1,136 @@
+Opening - /home/garrett/algos/Autocomplete/data/fourletterwordshalf.txt.
+Found 228488 words
+Time to initialize BruteAutoComplete - 0.031269453
+Time to initialize Autocomplete.BinarySearchAutocomplete - 0.018944041
+Time to initialize - Autocomplete.TrieAutocomplete - 0.041175712
+Benchmarking Autocomplete$BruteAutocomplete...
+Time for topMatch("") - 9.76292494E-4
+Time for topMatch("aenk") - 0.002292565636
+Time for topMatch("a") - 9.79924444E-4
+Time for topMatch("ae") - 9.97258069E-4
+Time for topMatch("notarealword") - 0.00217715885
+Time for topKMatches("", 1) -  0.002475949073
+Time for topKMatches("", 4) -  0.002470573469
+Time for topKMatches("", 7) -  0.002424052708
+Time for topKMatches("aenk", 1) -  0.002333299542
+Time for topKMatches("aenk", 4) -  0.002300679278
+Time for topKMatches("aenk", 7) -  0.002325857902
+Time for topKMatches("a", 1) -  0.002316029574
+Time for topKMatches("a", 4) -  0.002327331768
+Time for topKMatches("a", 7) -  0.002336929429
+Time for topKMatches("ae", 1) -  0.002302767575
+Time for topKMatches("ae", 4) -  0.002331831682
+Time for topKMatches("ae", 7) -  0.002301558674
+Time for topKMatches("notarealword", 1) -  0.002207103101
+Time for topKMatches("notarealword", 4) -  0.002197075967
+Time for topKMatches("notarealword", 7) -  0.002220652162
+Benchmarking Autocomplete$BinarySearchAutocomplete...
+Time for topMatch("") - 2.95093652E-4
+Time for topMatch("aenk") - 1.591793E-6
+Time for topMatch("a") - 1.3693708E-5
+Time for topMatch("ae") - 1.232424E-6
+Time for topMatch("notarealword") - 2.699856E-6
+Time for topKMatches("", 1) -  6.66408477E-4
+Time for topKMatches("", 4) -  6.42520517E-4
+Time for topKMatches("", 7) -  6.54414042E-4
+Time for topKMatches("aenk", 1) -  6.56735E-7
+Time for topKMatches("aenk", 4) -  6.14308E-7
+Time for topKMatches("aenk", 7) -  5.78319E-7
+Time for topKMatches("a", 1) -  4.6024809E-5
+Time for topKMatches("a", 4) -  4.7348925E-5
+Time for topKMatches("a", 7) -  4.8109832E-5
+Time for topKMatches("ae", 1) -  2.765883E-6
+Time for topKMatches("ae", 4) -  3.066243E-6
+Time for topKMatches("ae", 7) -  3.837925E-6
+Time for topKMatches("notarealword", 1) -  9.1754E-7
+Time for topKMatches("notarealword", 4) -  8.64086E-7
+Time for topKMatches("notarealword", 7) -  9.8368E-7
+Benchmarking Autocomplete$TrieAutocomplete...
+Created 237628 nodes
+Time for topMatch("") - 1.6760943E-5
+Time for topMatch("aenk") - 3.45463E-7
+Time for topMatch("a") - 1.2589787E-5
+Time for topMatch("ae") - 8.900423E-6
+Time for topMatch("notarealword") - 1.42379E-7
+Time for topKMatches("", 1) -  1.4743594E-5
+Time for topKMatches("", 4) -  2.2017759E-5
+Time for topKMatches("", 7) -  2.5188843E-5
+Time for topKMatches("aenk", 1) -  1.301788E-6
+Time for topKMatches("aenk", 4) -  1.35448E-6
+Time for topKMatches("aenk", 7) -  9.66565E-7
+Time for topKMatches("a", 1) -  3.174678E-6
+Time for topKMatches("a", 4) -  1.37632322E-4
+Time for topKMatches("a", 7) -  3.3573539E-5
+Time for topKMatches("ae", 1) -  2.031283E-6
+Time for topKMatches("ae", 4) -  4.658857E-6
+Time for topKMatches("ae", 7) -  7.879963E-6
+Time for topKMatches("notarealword", 1) -  5.58E-8
+Time for topKMatches("notarealword", 4) -  5.5226E-8
+Time for topKMatches("notarealword", 7) -  6.0409E-8
+
+*****************************************************************
+Printing Summary of Results ...
+
+*****************************************************************
+prefix         , Brute          , Binary         , Trie
+          -------------------------------------------------------------------
+               ,    9.76292e-04,     2.95094e-04,     1.67609e-05
+a              ,    9.79924e-04,     1.36937e-05,     1.25898e-05
+notarealword_7 ,    2.22065e-03,     9.83680e-07,     6.04090e-08
+ae             ,    9.97258e-04,     1.23242e-06,     8.90042e-06
+notarealword_1 ,    2.20710e-03,     9.17540e-07,     5.58000e-08
+notarealword_4 ,    2.19708e-03,     8.64086e-07,     5.52260e-08
+notarealword   ,    2.17716e-03,     2.69986e-06,     1.42379e-07
+aenk           ,    2.29257e-03,     1.59179e-06,     3.45463e-07
+aenk_7         ,    2.32586e-03,     5.78319e-07,     9.66565e-07
+ae_7           ,    2.30156e-03,     3.83793e-06,     7.87996e-06
+_1             ,    2.47595e-03,     6.66408e-04,     1.47436e-05
+a_1            ,    2.31603e-03,     4.60248e-05,     3.17468e-06
+ae_4           ,    2.33183e-03,     3.06624e-06,     4.65886e-06
+_4             ,    2.47057e-03,     6.42521e-04,     2.20178e-05
+a_4            ,    2.32733e-03,     4.73489e-05,     1.37632e-04
+_7             ,    2.42405e-03,     6.54414e-04,     2.51888e-05
+a_7            ,    2.33693e-03,     4.81098e-05,     3.35735e-05
+aenk_1         ,    2.33330e-03,     6.56735e-07,     1.30179e-06
+ae_1           ,    2.30277e-03,     2.76588e-06,     2.03128e-06
+aenk_4         ,    2.30068e-03,     6.14308e-07,     1.35448e-06
+               ,    9.76292e-04,     2.95094e-04,     1.67609e-05
+a              ,    9.79924e-04,     1.36937e-05,     1.25898e-05
+notarealword_7 ,    2.22065e-03,     9.83680e-07,     6.04090e-08
+ae             ,    9.97258e-04,     1.23242e-06,     8.90042e-06
+notarealword_1 ,    2.20710e-03,     9.17540e-07,     5.58000e-08
+notarealword_4 ,    2.19708e-03,     8.64086e-07,     5.52260e-08
+notarealword   ,    2.17716e-03,     2.69986e-06,     1.42379e-07
+aenk           ,    2.29257e-03,     1.59179e-06,     3.45463e-07
+aenk_7         ,    2.32586e-03,     5.78319e-07,     9.66565e-07
+ae_7           ,    2.30156e-03,     3.83793e-06,     7.87996e-06
+_1             ,    2.47595e-03,     6.66408e-04,     1.47436e-05
+a_1            ,    2.31603e-03,     4.60248e-05,     3.17468e-06
+ae_4           ,    2.33183e-03,     3.06624e-06,     4.65886e-06
+_4             ,    2.47057e-03,     6.42521e-04,     2.20178e-05
+a_4            ,    2.32733e-03,     4.73489e-05,     1.37632e-04
+_7             ,    2.42405e-03,     6.54414e-04,     2.51888e-05
+a_7            ,    2.33693e-03,     4.81098e-05,     3.35735e-05
+aenk_1         ,    2.33330e-03,     6.56735e-07,     1.30179e-06
+ae_1           ,    2.30277e-03,     2.76588e-06,     2.03128e-06
+aenk_4         ,    2.30068e-03,     6.14308e-07,     1.35448e-06
+               ,    9.76292e-04,     2.95094e-04,     1.67609e-05
+a              ,    9.79924e-04,     1.36937e-05,     1.25898e-05
+notarealword_7 ,    2.22065e-03,     9.83680e-07,     6.04090e-08
+ae             ,    9.97258e-04,     1.23242e-06,     8.90042e-06
+notarealword_1 ,    2.20710e-03,     9.17540e-07,     5.58000e-08
+notarealword_4 ,    2.19708e-03,     8.64086e-07,     5.52260e-08
+notarealword   ,    2.17716e-03,     2.69986e-06,     1.42379e-07
+aenk           ,    2.29257e-03,     1.59179e-06,     3.45463e-07
+aenk_7         ,    2.32586e-03,     5.78319e-07,     9.66565e-07
+ae_7           ,    2.30156e-03,     3.83793e-06,     7.87996e-06
+_1             ,    2.47595e-03,     6.66408e-04,     1.47436e-05
+a_1            ,    2.31603e-03,     4.60248e-05,     3.17468e-06
+ae_4           ,    2.33183e-03,     3.06624e-06,     4.65886e-06
+_4             ,    2.47057e-03,     6.42521e-04,     2.20178e-05
+a_4            ,    2.32733e-03,     4.73489e-05,     1.37632e-04
+_7             ,    2.42405e-03,     6.54414e-04,     2.51888e-05
+a_7            ,    2.33693e-03,     4.81098e-05,     3.35735e-05
+aenk_1         ,    2.33330e-03,     6.56735e-07,     1.30179e-06
+ae_1           ,    2.30277e-03,     2.76588e-06,     2.03128e-06
+aenk_4         ,    2.30068e-03,     6.14308e-07,     1.35448e-06

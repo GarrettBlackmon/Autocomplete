@@ -1,0 +1,15 @@
+Name: Garrett Blackmon
+AUID: gpb0006
+Hours Spent: 18.5
+Consulted With: Vincent Canivez(canivvs)
+Resources Used: Stackoverflow.com, Oracle JDK 9 Documentation.
+Impressions:
+At first glance this assignment was very confusing to me as I could not Get
+BruteForceAutoComplete to work as it should have without modification.
+I resolved this by posting in the decusions section on canvis to ask
+if anyone else was having the same issue. As it turns out the project
+has been modified from its original form and $Autocomplete$ needed to be
+added before the AUTOCOMPLETOR_CLASS_NAME constants.
+
+After that was solved there was a lot of trial and error but it was less complex
+than I originally expected given I was unable to simply compile the files correctly.
