@@ -470,30 +470,26 @@ public class Autocomplete {
          */
         public String topMatch(String prefix) {
             // TODO: Implement topMatch
-            if(prefix == null){
-                throw new NullPointerException("Prefix is NULL!");
+            if (prefix == null) {
+                throw new NullPointerException("prefix is NULL!");
             }
 
-            Node currentNode = myRoot;
-            double rootMaxWeight = currentNode.mySubtreeMaxWeight;
+            PriorityQueue<Node> nodes = new PriorityQueue<Node>(new Node.ReverseSubtreeMaxWeightComparator());
+            Node node = myRoot;
 
-            for(int i = 0; i < prefix.length(); i++){
+            for (int i = 0; i < prefix.length(); i++) {
                 char c = prefix.charAt(i);
-                currentNode = currentNode.getChild(c);
-                if(currentNode == null){
+                if (!node.children.containsKey(c)){
                     return "";
                 }
+                node = node.getChild(c);
             }
             
-            while(!currentNode.isWord){
-                for(Node childNode : currentNode.children.values()){
-                    if(childNode.mySubtreeMaxWeight == rootMaxWeight){
-                        currentNode = childNode;
-                        break;
-                    }
-                }
+            while (node.mySubtreeMaxWeight != node.getWeight()) {
+                nodes.addAll(node.children.values());
+                node = nodes.remove();
             }
-            return currentNode.getWord();
+            return node.getWord();
         }
 
         /**
